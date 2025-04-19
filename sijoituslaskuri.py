@@ -12,6 +12,7 @@ vuodet = st.slider("Sijoitusaika (vuotta)", 1, 50, 20)
 
 # Laskenta
 kuukausituotto = (1 + vuosituotto / 100) ** (1 / 12) - 1
+kuukausisaasto = st.number_input("Kuukausisäästö (€)", min_value=0, value=200, step=10)
 kuukaudet = vuodet * 12
 ajat = np.arange(1, kuukaudet + 1)
 
