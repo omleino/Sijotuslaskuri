@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 st.set_page_config(page_title="Sijoituslaskuri", layout="centered")
 st.title("Sijoituslaskuri")
 
-kuukausisaasto = st.number_input("Kuukausisäästö (€)", min_value=0.0, value=200.0 step=10)
+kuukausisaasto = st.number_input("Kuukausisäästö (€)", min_value=0.0, value=200.0,step=10)
 vuosituotto = st.slider("Tuotto-odotus (% vuodessa)", 0.0, 15.0, 5.0, step=0.1)
 vuodet = st.slider("Sijoitusaika (vuotta)", 1, 50, 20)
 
